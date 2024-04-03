@@ -9,24 +9,16 @@ class Square:
         """Constructor:
 
         Args:
-            size: length of square side
-            position: coordinates of square
-
-        Raises:
-            TypeError: if size is not an int
-            ValueError: if size is a negative number
+            size (int): length of square side
+            position (int, int): coordinates of square
         """
-        if not isinstance(size, int):
-            raise TypeError('size must be an integer')
-        if size < 0:
-            raise ValueError('size must be >= 0')
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def position(self):
         """Get/set the position"""
-        return self.__position
+        return (self.__position)
 
     @position.setter
     def position(self, value):
@@ -47,19 +39,11 @@ class Square:
 
     @property
     def size(self):
-        """Size of square
-
-        Returns: size of square
-        """
-        return self.__size
+        """get/set the size of square"""
+        return (self.__size)
 
     @size.setter
     def size(self, value):
-        """Set the value of square size
-
-        Returns:
-            none
-        """
         if not isinstance(value, int):
             raise TypeError('size must be an integer')
         if value < 0:
