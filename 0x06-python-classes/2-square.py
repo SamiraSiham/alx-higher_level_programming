@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """Square Class Documentation"""
 
+
 class Square:
     """Define class attributes"""
-
 
     def __init__(self, size=0):
         """Constructor:
