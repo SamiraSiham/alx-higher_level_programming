@@ -3,6 +3,6 @@
 """Rectangle class Documentation"""
 
 
-class Reactangle:
+class Rectangle:
     """Rectangle class attributes"""
     pass
