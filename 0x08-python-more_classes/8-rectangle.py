@@ -95,7 +95,7 @@ class Rectangle:
 
     def __repr__(self):
         """returns a string representation of the object for reproduction"""
-        return "Rectangle(" + str(self._width) + ", " + str(self.__height) + ")"
+        return "Rectangle(" + str(self.width) + ", " + str(self.height) + ")"
 
     def __del__(self):
         """print a message when an object is destroyed"""
