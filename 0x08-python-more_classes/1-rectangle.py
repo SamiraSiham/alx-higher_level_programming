@@ -10,7 +10,18 @@ class Rectangle:
         Args:
             width: width of rectangle
             height: height of rectangle
+        Raises:
+            TypeError: if width or height are not int
+            ValueError: if width or height are negative numbers
         """
+        if not isinstance(width, int):
+            raise TypeError('width must be an integer')
+        if width < 0:
+            raise ValueError('width must be >= 0')
+        if not isinstance(height, int):
+            raise TypeError('height must be an integer')
+        if height < 0:
+            raise ValueError('height must be >= 0')
         self.__width = width
         self.__height = height
 
