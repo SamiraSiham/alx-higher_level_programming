@@ -5,7 +5,7 @@
 
 class Rectangle:
     """Rectangle class attributes"""
-    num = 0
+    number_of_instances = 0
     def __init__(self, width=0, height=0):
         """Constructor.
         Args:
@@ -25,7 +25,7 @@ class Rectangle:
             raise ValueError('height must be >= 0')
         self.__width = width
         self.__height = height
-        num += 1
+        number_of_instances += 1
 
     @property
     def width(self):
@@ -98,4 +98,4 @@ class Rectangle:
     def __del__(self):
         """print a message when an object is destroyed"""
         print("Bye rectangle...")
-        num -= 1
+        number_of_instances -= 1
