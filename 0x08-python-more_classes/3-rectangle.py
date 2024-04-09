@@ -85,7 +85,7 @@ class Rectangle:
         """Print the rectangle"""
         if self.__height == 0 or self.__width == 0:
             return ""
+        rect = ''
         for i in range(self.__height):
-            for j in range(self.__width):
-                print("#", end="\n" if j is self.__width - 1 else "")
-        return ""
+            rect += '#' * self.__width + '\n'
+        return rect
