@@ -83,11 +83,10 @@ class Rectangle:
 
     def __str__(self):
         """Print the rectangle"""
-        if self.__height == 0 or self.__width == 0:
-            return ""
-        rect = ''
-        for i in range(self.__height):
-            rect += '#' * self.__width + '\n'
+        rect = ""
+        if self.__width != 0 and self.__height != 0:
+            rect += "\n".join("#" * self.__width
+                              for j in range(self.__height))
         return rect
 
     def __repr__(self):
