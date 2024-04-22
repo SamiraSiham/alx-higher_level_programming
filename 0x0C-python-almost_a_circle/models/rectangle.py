@@ -66,3 +66,10 @@ class Rectangle(Base):
     def area(self):
         '''calculate rectangle area'''
         return self.width * self.height
+
+    def display(self):
+        '''display rectangle using #'''
+        for i in range(self.width):
+            for j in range(self.height):
+                print("#", end="\n" if j in self.height - 1 else "")
+        print()
